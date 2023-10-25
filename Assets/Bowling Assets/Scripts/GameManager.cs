@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Pin[] pins;
 
-    private bool isGamePLaying = false;
+    private bool isGamePlaying = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,17 +21,17 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        isGamePLaying = true;
+        isGamePlaying = true;
         SetNextThrow();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isGamePLaying == false && Input.GetKeyUp(KeyCode.X))
-        {
-            
-        }
+        //if (isGamePLaying == false && Input.GetKeyUp(KeyCode.X))
+        //{
+        //    StartGame();
+        //}
     }
 
     public void SetNextThrow()
