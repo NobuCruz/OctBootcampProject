@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     {
         if (isGamePLaying == false && Input.GetKeyUp(KeyCode.X))
         {
-
+            
         }
     }
 
