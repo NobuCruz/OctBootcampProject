@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
             throwingArrow.position.z
             );
         //set Ball Position based on Throwing Direction Position
-        selectedBall.position = throwingArrow.position + ballOffset;
+        selectedBall.transform.position = throwingArrow.position + ballOffset;
 
         }
 
