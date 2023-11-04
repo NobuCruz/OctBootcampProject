@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         ballOffset = ballSpawnPoint.position - throwingArrow.position;
         
 
-        StartThrow();
+        
 
     }
 

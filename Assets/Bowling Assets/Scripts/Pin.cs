@@ -45,7 +45,7 @@ public class Pin : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("pit"))
+        if (other.gameObject.CompareTag("Pit"))
         {
             isFallen = true;
         }    

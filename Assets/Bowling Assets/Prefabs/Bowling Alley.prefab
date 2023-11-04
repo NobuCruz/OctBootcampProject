@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 2834061689417219284}
   - component: {fileID: 579931935103154750}
   - component: {fileID: 4219306853519737251}
-  - component: {fileID: 6093944260456288905}
+  - component: {fileID: 6205481754511818601}
   m_Layer: 0
   m_Name: Pit
   m_TagString: Pit
@@ -303,8 +303,8 @@ Transform:
   m_GameObject: {fileID: 2741672452480282899}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.949, y: -2.266, z: -0.007}
-  m_LocalScale: {x: 9.361421, y: 0.26901713, z: 8.24588}
+  m_LocalPosition: {x: 23.949, y: -2.18, z: -0.007}
+  m_LocalScale: {x: 9.361421, y: 0.72203517, z: 8.24588}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4721495554501671766}
@@ -359,8 +359,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6093944260456288905
-MeshCollider:
+--- !u!65 &6205481754511818601
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -374,13 +374,12 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+  m_Center: {x: 0.00000047683716, y: -0.00000047683716, z: -2.3283064e-10}
 --- !u!1 &3874655064819481769
 GameObject:
   m_ObjectHideFlags: 0
