@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private Vector3 ballOffset;
     private bool wasBallThrown;
-
+    private float horizontalAxis;
     private Rigidbody selectedBall;
 
     // Start is called before the first frame update
@@ -76,8 +76,8 @@ public class PlayerController : MonoBehaviour
             throwingArrow.position.y,
             throwingArrow.position.z
             );
-        //set Ball Position based on Throwing Direction Position
-        selectedBall.transform.position = throwingArrow.position + ballOffset;
+            //set Ball Position based on Throwing Direction Position
+         // selectedBall.transform.position = throwingArrow.position + ballOffset;
 
         }
 
@@ -95,5 +95,29 @@ public class PlayerController : MonoBehaviour
            selectedBall.AddForce(throwingArrow.forward * throwForce, ForceMode.Impulse);
             throwingArrowAnim.SetBool("Aiming", false);
         }
+    }
+
+    public void ThrowBall()
+    {
+        if(!wasBallThrown)
+        {
+            wasBallThrown = true;
+            selectedBall.AddForce(throwingArrow.forward * throwForce, ForceMode.Impulse);
+            throwingArrowAnim.SetBool("Aiming", false);
+        }
+    }
+
+    public void SetHorizontal (bool isleft)
+    {
+        if (isleft)
+            horizontalAxis = -1;
+        else
+            horizontalAxis = 1;
+    }
+
+
+    public void ResetHorizontal()
+    {
+        horizontalAxis = 0;
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
-
+    [SerializeField] private UIManager uiManager;
 
     private int totalScore;
 
@@ -38,6 +38,9 @@ public class ScoreManager : MonoBehaviour
     //set value for our frame score each time nu throw the ball
     public void setFrameScore(int score)
     {
+        //SET UI
+        uiManager.SetFrameValue(currentFrame, currentThrow, score);
+
         //Ball1
         if(currentThrow == 1)
         {
@@ -62,6 +65,7 @@ public class ScoreManager : MonoBehaviour
                 {
                     isStrike = true;
                     currentFrame++; //move to next frame since full marks obtained
+                    uiManager.ShowStrike();
                 }
 
                 // GameManager to Reset Pins
@@ -101,6 +105,8 @@ public class ScoreManager : MonoBehaviour
                     currentFrame++;
                     currentThrow = 1;
                 }
+
+                uiManager.ShowSpare();
             }
             else
             {
@@ -156,5 +162,10 @@ public class ScoreManager : MonoBehaviour
         currentThrow = 1;
         frames = new int[10];
     }
-    
+
+
+    public int[] GetFrameScore()
+    {
+        return frames;
+    }
 }

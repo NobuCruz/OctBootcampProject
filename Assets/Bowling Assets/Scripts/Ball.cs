@@ -39,6 +39,11 @@ public class Ball : MonoBehaviour
             //Destrow Ball GameObject
             Destroy(gameObject);
         }
+        else if(other.CompareTag("closeUpCam"))
+        {
+            //change camera position
+            gameManager.SwitchCam();
+        }
 
         
     }

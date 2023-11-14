@@ -147,6 +147,11 @@ PrefabInstance:
       propertyPath: txtThrow3
       value: 
       objectReference: {fileID: 8915608904647177098}
+    - target: {fileID: -6606799628869022783, guid: 7ea6ae976f44ffa45a110478d89aa0d0,
+        type: 3}
+      propertyPath: isFinalFrame
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2342070245853704462, guid: 7ea6ae976f44ffa45a110478d89aa0d0,
         type: 3}
       propertyPath: m_Name
