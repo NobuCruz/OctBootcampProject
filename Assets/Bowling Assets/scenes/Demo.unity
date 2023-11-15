@@ -1023,6 +1023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 262316632}
+  - component: {fileID: 262316633}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -1045,6 +1046,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &262316633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262316631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70d9fe0f1706a84299cf392d3b97ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballSFX: {fileID: 0}
+  pinSFX: {fileID: 0}
+  uiSFX: {fileID: 0}
+  clipThrowStart: {fileID: 0}
+  clipRoll: {fileID: 8300000, guid: b7b574d9978d62f4e8bcab1bd84bdf59, type: 3}
+  clipPinCollision: {fileID: 0}
+  clipBallFall: {fileID: 0}
+  clipButtonHover: {fileID: 0}
+  clipButtonPressed: {fileID: 0}
+  clipSpare: {fileID: 0}
+  clipStrike: {fileID: 8300000, guid: ef4e3f42302bd224891d794e68c1f4fb, type: 3}
 --- !u!1 &270882516
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,7 +2884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1428018134}
-  uiManager: {fileID: 0}
+  uiManager: {fileID: 984766538}
 --- !u!4 &1081757524
 Transform:
   m_ObjectHideFlags: 0

@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour
     {
         mainCam.enabled = !mainCam.enabled;
         closeUpCam.enabled = !closeUpCam.enabled;
-        SwitchCam();
+        //SwitchCam();
     }
 
     

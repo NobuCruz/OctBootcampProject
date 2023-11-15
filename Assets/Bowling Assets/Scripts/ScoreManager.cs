@@ -42,7 +42,7 @@ public class ScoreManager : MonoBehaviour
         uiManager.SetFrameValue(currentFrame, currentThrow, score);
 
         //Ball1
-        if(currentThrow == 1)
+        if (currentThrow == 1)
         {
             frames[currentFrame - 1] += score; //setting the right fram index and adding the score value from the parameter passed
 
